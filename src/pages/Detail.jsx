@@ -1,12 +1,13 @@
-import {View, Text, Image, TextInput} from 'react-native';
+import {View, Text, Image, TextInput, TouchableOpacity} from 'react-native';
 import React from 'react';
 
-const Detail = () => {
+const Detail = ({navigation}) => {
   return (
     <View>
       <View>
         <View>
-          <Image
+          <TouchableOpacity onPress={() => navigation.navigate('Home')}>
+            <Image
             source={require('../assets/images/Back2.png')}
             style={{
               marginTop: 20,
@@ -15,6 +16,7 @@ const Detail = () => {
               marginLeft: 49,
             }}
           />
+          </TouchableOpacity>
         </View>
         <Image
           source={require('../assets/images/Lemont2.png')}
@@ -108,8 +110,8 @@ const Detail = () => {
             paddingVertical: 16,
           }}></TextInput>
       </View>
-      
-      <View
+      <TouchableOpacity onPress={() => navigation.navigate('Success')}>
+        <View
         style={{
           height: 52,
           backgroundColor: '#ED3636',
@@ -133,6 +135,8 @@ const Detail = () => {
           Konfirmasi Pemesanan
         </Text>
       </View>
+      </TouchableOpacity>
+      
     </View>
   );
 };
