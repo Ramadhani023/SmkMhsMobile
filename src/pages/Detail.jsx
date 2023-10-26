@@ -108,19 +108,31 @@ const Detail = () => {
             paddingVertical: 16,
           }}></TextInput>
       </View>
+      
       <View
         style={{
           height: 52,
           backgroundColor: '#ED3636',
-          marginHorizontal: 16,
-          borderRadius: 99,
+          marginHorizontal: 49,
+          borderRadius: 12,
           marginTop: 100,
           flexDirection: 'row',
           justifyContent: 'space-between',
           alignItems: 'center',
           paddingHorizontal: 10,
           paddingVertical: 16,
-        }}></View>
+        }}>
+        <Text
+          style={{
+            fontFamily: 'DM Sans',
+            fontSize: 14,
+            fontWeight: 'bold',
+            color: 'white',
+            marginLeft: 68,
+          }}>
+          Konfirmasi Pemesanan
+        </Text>
+      </View>
     </View>
   );
 };
