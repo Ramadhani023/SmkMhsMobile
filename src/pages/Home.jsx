@@ -156,7 +156,7 @@ const Home = ({navigation}) => {
         <View style={{borderRadius: 12}}>
           <TouchableOpacity onPress={() => navigation.navigate('Detail')}>
             <Image
-              source={require('../assets/images/Lemont.png')}
+              source={require('../assets/images/Lemont2.png')}
               style={{width: 190, borderRadius: 12, height: 159}}
             />
           </TouchableOpacity>
